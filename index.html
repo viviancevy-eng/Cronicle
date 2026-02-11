@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cronicle | Free Youtube Video Downloader</title>
+    <meta
+      name="description"
+      content="Download YouTube videos and audio with Cronicle. Fast, secure, and premium quality."
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Ionicons for Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="glow-bg"></div>
+
+    <header>
+      <nav class="container">
+        <div class="logo">
+          <span class="logo-icon"
+            ><ion-icon name="flash-outline"></ion-icon
+          ></span>
+          <span class="logo-text">CRONICLE</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#how">How to Use</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#" class="btn-secondary">Donate</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-content">
+          <h1 class="gradient-text">Download Youtube Video</h1>
+          <p>
+            Convert and download your favorite content in stunning quality. No
+            limits, just Cronicle.
+          </p>
+
+          <div class="search-container">
+            <div class="input-wrapper">
+              <ion-icon name="link-outline" class="input-icon"></ion-icon>
+              <input
+                type="text"
+                id="videoUrl"
+                placeholder="Paste YouTube link here..."
+                autocomplete="off"
+              />
+            </div>
+            <button id="downloadBtn" class="btn-primary">
+              <span>Search</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div id="statusMessage" class="status-msg"></div>
+        </div>
+
+        <!-- Result Card (Hidden by default) -->
+        <div id="resultCard" class="result-card hidden">
+          <div class="thumbnail-wrapper">
+            <img id="videoThumb" src="" alt="Thumbnail" />
+            <div class="video-duration" id="videoDuration">04:20</div>
+          </div>
+          <div class="video-info">
+            <h3 id="videoTitle">Loading Title...</h3>
+            <p id="videoAuthor">Channel Name</p>
+
+            <div id="apisyuLink" class="apisyu-container">
+              <!-- Downloader Widget will be injected here -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features container">
+        <div class="section-title">
+          <h2>Why Choose Cronicle?</h2>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feat-icon">
+              <ion-icon name="rocket-outline"></ion-icon>
+            </div>
+            <h3>Blazing Fast</h3>
+            <p>
+              Optimized server-side processing for the fastest conversion
+              speeds.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feat-icon">
+              <ion-icon name="shield-checkmark-outline"></ion-icon>
+            </div>
+            <h3>Secure & Safe</h3>
+            <p>
+              No malware, no virus. Your security is our priority.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feat-icon">
+              <ion-icon name="infinite-outline"></ion-icon>
+            </div>
+            <h3>Unlimited</h3>
+            <p>Download as many videos as you want without registration.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">Cronicle</div>
+          <p>&copy; 2026 Cronicle Media. Built for the web.</p>
+          <div class="socials">
+            <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
